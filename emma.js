@@ -3,6 +3,7 @@ export function start(container, callbacks) {
   playAdventure(container, callbacks, {
     hero: '👧', icon: '📔', title: 'El diario secreto de Emma',
     sprite: 'emma',
+    scene: 'emma',
     intro: 'El Sprint empezó. Emma escribe en su diario cómo se junta el equipo cada día, con respeto y escuchando a todos. A esa junta se le llama Daily Scrum.',
     stops: [
       { x: 6, y: 0, icon: '🌅', name: 'La mañana', teach: 'Cada día el equipo se junta unos 15 minutos para organizarse. Es la Daily Scrum.', q: '¿Cuánto dura la Daily Scrum?', opts: ['Una semana', 'Toda la tarde', '15 minutos'], ok: 2, hint: 'Es una junta cortita.' },

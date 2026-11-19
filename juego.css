@@ -11,3 +11,7 @@
 @keyframes salto-sprite{40%{transform:translateY(-10%) scale(1.08)}}
 @media (max-width:560px){.heroe{width:21cqw;height:44cqw}}
 @media (prefers-reduced-motion:reduce){.heroe.camina i{animation:none!important}}
+
+/* Cada aventura tiene su propio lugar: el mapa ya no comparte el mismo ambiente. */
+.mundo{background-image:linear-gradient(180deg,rgba(27,42,91,.04),rgba(27,42,91,.12)),var(--scene);background-position:center;background-size:cover;background-repeat:no-repeat}
+.mundo .agua,.mundo .sendero,.mundo .deco{display:none}

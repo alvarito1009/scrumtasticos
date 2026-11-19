@@ -3,6 +3,7 @@ export function start(container, callbacks) {
   playAdventure(container, callbacks, {
     hero: '👦', icon: '🎈', title: 'La fiesta sorpresa de Nico',
     sprite: 'nico',
+    scene: 'nico',
     intro: 'Leo le pasó el tesoro a Nico. Para la Feria hay muchas ideas y poco tiempo. Nico sabe que no se puede hacer todo a la vez: hay que planear un Sprint.',
     stops: [
       { x: 6, y: 0, icon: '📋', name: 'La pizarra de pendientes', teach: 'Aquí está la lista de todo lo que queremos hacer. Se llama Product Backlog.', q: '¿Cómo se llama la lista de todo lo que queremos hacer?', opts: ['Product Backlog', 'Lista de dulces', 'Diploma'], ok: 0, hint: 'Empieza con Product.' },

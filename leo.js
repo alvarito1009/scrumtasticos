@@ -3,6 +3,7 @@ export function start(container, callbacks) {
   playAdventure(container, callbacks, {
     hero: '🧒', icon: '🗝️', title: 'Leo y el tesoro perdido',
     sprite: 'leo',
+    scene: 'leo',
     intro: 'Leo y sus amigos formaron el Equipo Aventurero para organizar la Feria de la Lectura. Pero un mapa dice que el tesoro del equipo está con tres ayudantes. ¡Búscalos! Así conocerás los tres roles de Scrum.',
     stops: [
       { x: 6, y: 0, icon: '🧑‍🎨', name: 'La Product Owner', teach: 'Yo decido qué cosas de la feria son más importantes. Mi lista se llama Product Backlog.', q: '¿Quién decide qué es lo más importante hacer?', opts: ['El que grita más fuerte', 'La Product Owner', 'Nadie'], ok: 1, hint: 'Es quien cuida la lista de lo más valioso.' },

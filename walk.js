@@ -40,7 +40,7 @@ export function playAdventure(box, cb, c) {
     const target = gridToWorld(s.x, s.y);
     box.innerHTML = `<section class="panel aventura-panel"><h1>${c.title}</h1>
       <p class="reto"><span class="chip">Reto ${i + 1} de ${c.stops.length}</span> Señala el mapa: llega hasta <strong>${s.icon} ${s.name}</strong>.</p>
-      <div class="mundo" role="application" aria-label="Escena explorable. Toca o haz clic en un lugar para caminar hasta allí.">
+      <div class="mundo" style="--scene:url('./assets/scene-${c.scene}.png')" role="application" aria-label="Escena explorable. Toca o haz clic en un lugar para caminar hasta allí.">
         <div class="brillo"></div><div class="agua"><span>≈</span><span>≈</span><span>≈</span></div><div class="sendero"></div>
         ${DECOR.map(([emoji, x, y, label]) => `<i class="deco" style="left:${x}%;top:${y}%" aria-label="${label}">${emoji}</i>`).join('')}
         <div class="cartel" style="left:${target.x}%;top:${target.y - 10}%">${s.icon}<span>${s.name}</span></div>

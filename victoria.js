@@ -3,6 +3,7 @@ export function start(container, callbacks) {
   playAdventure(container, callbacks, {
     hero: '👩‍🎨', icon: '🧵', title: 'El taller de moda de Victoria',
     sprite: 'victoria',
+    scene: 'victoria',
     intro: 'El Sprint termina y Victoria tiene lista la ropa de los personajes de la feria. Ahora toca mostrar lo que se logró y escuchar opiniones.',
     stops: [
       { x: 6, y: 0, icon: '🧵', name: 'La pieza terminada', teach: 'Un Incremento es una parte del trabajo ya terminada y que se puede usar.', q: '¿Cuál es un Incremento?', opts: ['Un disfraz que ya está completo y se puede usar', 'Una idea que nadie ha hecho', 'Un disfraz a medio coser'], ok: 0, hint: 'Debe estar terminado y servir.' },
