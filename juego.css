@@ -1,0 +1,8 @@
+.mapa{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;max-width:420px;margin:12px 0}
+.mapa span{aspect-ratio:1;display:grid;place-items:center;font-size:clamp(1.4rem,7vw,2.2rem);background:#EAF7E4;border:2px solid var(--tinta);border-radius:10px}
+.pad{display:grid;grid-template-columns:repeat(3,64px);grid-template-rows:repeat(2,64px);gap:8px;margin:12px 0}
+.pad button{font-size:1.6rem;border:3px solid var(--tinta);border-radius:16px;background:var(--sol);cursor:pointer}
+.pad .u{grid-column:2}.pad .l{grid-row:2;grid-column:1}.pad .dn{grid-row:2;grid-column:2}.pad .r{grid-row:2;grid-column:3}
+.dialogo{background:#FFF6D6;border:3px solid var(--tinta);border-radius:16px;padding:14px;margin:12px 0}
+.dialogo .btn{margin:4px 4px 4px 0}
+.num{font-weight:800;font-size:.9rem}
