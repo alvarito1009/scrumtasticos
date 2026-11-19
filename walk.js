@@ -46,7 +46,7 @@ export function playAdventure(box, cb, c) {
         <div class="cartel" style="left:${target.x}%;top:${target.y - 10}%">${s.icon}<span>${s.name}</span></div>
         <div class="npc" style="${pos(target)}"><span class="rebota">${s.icon}</span><span class="burbuja">¡Ven!</span></div>
         <div class="destino oculto" aria-hidden="true"><span></span></div>
-        <div class="heroe" style="${pos(hero)}"><i><b>${c.hero}</b></i></div>
+        <div class="heroe" style="${pos(hero)};--sprite:url('./assets/${c.sprite}-walk.png')" aria-label="${c.title}"><i aria-hidden="true"></i></div>
       </div>
       <div class="pad" aria-label="Controles de movimiento"><button class="u" data-d="0,-1" aria-label="Arriba">⬆️</button><button class="l" data-d="-1,0" aria-label="Izquierda">⬅️</button>
       <button class="dn" data-d="0,1" aria-label="Abajo">⬇️</button><button class="r" data-d="1,0" aria-label="Derecha">➡️</button></div>

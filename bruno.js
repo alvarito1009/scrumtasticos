@@ -2,6 +2,7 @@ import { playAdventure } from './walk.js';
 export function start(container, callbacks) {
   playAdventure(container, callbacks, {
     hero: '🤺', icon: '🛡️', title: 'Las aventuras del caballero Bruno',
+    sprite: 'bruno',
     intro: 'El caballero Bruno cuenta que el Sprint terminó, pero el equipo aún no se va a casa. Falta una última reunión para ser un mejor equipo: la Retrospectiva.',
     stops: [
       { x: 6, y: 0, icon: '🌟', name: 'Lo que salió bien', teach: 'En la Retrospectiva primero celebramos lo que salió bien.', q: '¿Qué comentamos primero en la Retrospectiva?', opts: ['Solo errores', 'Lo que salió bien', 'Nada'], ok: 1, hint: 'Se empieza con lo positivo.' },
